@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <h1 style="text-align: center;">Compte rendu du 2 eme scénario </h1>
+    <div>
+           <p>Création du tableau Trello </p>
+           <img src ="img/t2trello.png" alt="tableau trello" width="1000px" height="500px">
+    </div>
+    <h3 style="text-align: center;">First Step : Tagging </h3>
+      <ul>
+          <li>Déplacez-vous sur la branche Principale</li>
+          <li>Créez un TAG avec un nom V1.0 et un commentaire ‘ REALEASE 1.0 ‘</li>
+          <img src ="img/gitag.png" alt="creation de tag">
+          <li>Affichez les informations sur le TAG </li>
+           <img src ="img/tagname.png" alt="git show">
+           <li>D’après vous un TAG il sert à faire quoi au juste ?<br>
+            ca denno un eetiquette avec un numero de vertion a un groupe de commit </li>
+      </ul>
+      <h3 style="text-align: center;">Second Step : Stashing and Saving work in Progress  </h3>
+      <ul>
+          <li>Modifiez le fichier README.md  , ajoutez une ligne </li>
+          <img src ="img/rmligne.png" alt="ajouter ligne readme">
+          <li>Tapez la commande git Stash ?</li>
+          <li>Expliquez le fonctionnement de la commande git Stash </li>
+           <p>un peu pour travailler sur autre chose. Le problème est que vous ne voulez pas faire un commit de travaux<br>
+                à moitié faits juste pour pouvoir revenir sur ce point plus tard. La réponse à cette question est la cachette git<br>
+                 git-stash</p>
+           <li>	Tapez la commande git stash list </li>
+           <li>Qu’est-ce que vous constatez ? <br>
+            que la modification effectuer sur le fichier reademe.md n'est pas tracker</li>
+           <li>Modifiez le fichier « Licence.txt », ajoutez la ligne « APACHE 2.0 »</li>
+           <img src ="img/patsh2.png" alt="ajouter ligne licence.txt">
+           <li>Exécutez la commande « git stash pop » ?</li>
+           <li>Qu’est-ce que vous constatez ?</li>
+           <p>on constat que la commande git stash pop sert a recuperer le stash effectuer et qu'on peux le recuperer que sur un ripot clean<br>
+        et que les fichier dans stash ce prend pas en compte dans les add et commit </p>
+       </ul>
+           <h3 style="text-align: center;">third step:  Voyage sur Github, Local Repo to github Repo  </h3>
+             <ul>
+              <li>Créez un repo github public sans ajouter le fichier README.md</li>
+            <img src ="img/newripo.png" alt="ajouter ligne licence.txt">
+            <li>Créez le remote en https </li>
+            <img src ="img/https.png" alt="https ripo">
+            <li>Examinez le remote </li>
+            <p>le remot git remote add origin https://github.com/ucef8233/nouveau-ripos.git ce compose du lien github nom d'utulisateur et nom du ripos</p>
+            <li>Pushez le tous à travers la commande : git push –u origin master - -tags </li>
+            <img src ="img/pushtag.png" alt="push -u - tag">
+            <li>Expliquez la commande ? </li>
+            <p>la commande sert a envoyer le ripo du git local vers le github</p>
+            <li>Expliquez les options –u et - -tags ? </li>
+            <p>-u pour repporté toutes les modifications <!--arevoir--><br>
+            _tag pour push les tag non add  </p>
+             </ul>
+
+         <h3 style="text-align: center;">Fourth Step :  Mini challenge ( optionnel)   </h3>
+             <ul>
+               <li>Créez un fichier sous git nommé .SSH</li>
+               <li>Déplacez-vous dans le fichier .SSH </li>
+               <img src ="img/ajouSSH.png" alt="ajouter ssh">
+               <li>Maintenant à vos mains : Créez une authentification sécurisé SSH entre votre repo local et votre repo distant <br>
+                (aide : Ssh –keygen-t rsa –C ' email’).</li>
+               <img src ="img/sshkey.png" alt=" ssh key"><br>
+               <img src ="img/cléssh.png" alt=" ssh key"><br>
+               <img src ="img/addkey.png" alt=" ssh key">
+             </ul> 
+             <h3 style="text-align: center;">Fifth  Step:  Création d’une local copy   </h3>
+             <ul>
+                 <li>Sur github créez un autre repo nommé ( Monsiteweb)</li>
+                 <li>Ajoutez à l’arboresence toujours sur github le fichier .gitignore et un fichier licence.txt ‘APACHE 2.0 ‘</li>
+                 <img src ="img/creation+.png" alt=" creation github">
+                 <li>Créez un clone github vers le local sous le nom (Monsiteweb-local)</li>
+                 <img src ="img/clonesit.png" alt=" git clone ">
+                 <li>Vérifiez si le clone est créé. </li>
+             </ul>
+             <h3 style="text-align: center;">sixth step :  Sending the website  </h3>
+             <ul>
+                 <li>Télécharger le site web depuis le lien suivant : http://www.initializr.com/ </li>
+                 <li>Sur le site telecharger un site bootstrap avec le fichier .htaccess et le fichier 404.html</li>
+                 <li>Copiez le site télécharger dans votre repo local à travers une seule commande : </li>
+                 <img src ="img/cp-r.png" alt=" git clone ">
+                 <img src ="img/pushfitch.png" alt=" git clone ">
+                 <img src ="img/fetshadd.png" alt=" git clone ">
+                    
+             </ul>
+    <!--
+ 
+
+
+
+
+
+
+#6: sixth step :  Sending the website  :
+	Télécharger le site web depuis le lien suivant : http://www.initializr.com/ 
+	Sur le site telecharger un site bootstrap avec le fichier .htaccess et le fichier 404.html 
+	Analysez l’arboresence. 
+	Expliquez ? 
+	Copiez le site télécharger dans votre repo local à travers une seule commande : 
+
+	Hint : cp –R  ‘~/DESKTOP/initialzr/*’  .   ( supposons que vous êtes sur votre repo local ) 
+	Git status 
+	Faites le stagging et le commit en une seule ligne 
+	Faite le push à github 
+	Vérifiez l’existence du site local sur votre repo github
+
+#7: seventh step :  Fetch and pull   :
+
+	Sur github éditez le fichier Index.html, sur la balise <title>  </title> ajoutez le titre , mon premier site web . 
+	Faites le commit sur github 
+	Sur git et sur le repo local , Editez le fichier README.md
+	Faites le stagging et le commit en une seule ligne 
+	Qu’est-ce que vous constatez ? 
+
+ 	Trouble shooting :  
+
+	Executez la commande « git fetch » img git fetch2
+	Git status 
+	Expliquez ? 
+	Git pull img gitpull
+	Git push img pushmaster
+	Verifiez les commit sur github
+L’objectif de cette phase : c’est lorsqu’il y’a deux changements sur le repo local et sur le repo github, donc les démarches décrites c’est pour la gestion de ce conflit 
+
+
+
+
+
+      Fin du deuxième scenario, Maintenant vous avez préparé l’environnement GITHUB pour des concepts plus avancés, ainsi que vous avez acquis comment dialoguer avec GITHUB en se basant sur les commandes GIT  
+
+Mots clés : 
+Ssh –keygen-t rsa –C ' email’ ; 
+
+    -->
+</body>
+</html>

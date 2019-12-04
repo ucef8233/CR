@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1 style="text-align: center;">Compte rendu du 1 er scénario </h1>
+    <div>
+           <p>Création du tableau Trello </p>
+           <img src ="img/trelo.png" alt="tableau trello" width="1000px" height="500px">
+    </div>
+        <div style ="background:blueviolet;">
+        <h3 style="text-align: center;"> #1 : First Step : Immersion </h3>
+        <ul>
+            <li>Définissez git en quelques mots ? <br><br>
+                Git est un logiciel locale de gestion de versions.  </li><br>
+                <li>Expliquez le fonctionnement du fichier caché « .git ».<br><br>
+                    c'est lui qui donne l"autorisation au git bash pour appliquer les commande git sur les fichier 
+                </li>
+                <li>	Sur votre bureau créez un répertoire nommée « /projects ». >
+                    <img src ="img/creation projects.png" alt="creation du repo">
+                </li>
+                <li>Créez un Repository Local sous le nom « /demo ». /	Vérifiez le statut du répertoire « /demo ».
+                    <img src ="img/demoStatus.png" alt="creation demo et status">
+                </li>
+                <li>
+                Expliquez le commentaire. <br> <br>
+                 le message afficher apré avoir verifier le status du repertoire montre qu'il ya auqu'un fichier a enregistre et qu'on doit copier ou crée des fichier 
+                </li>
+                <li>	Créez le fichier README.md et ajouter la ligne suivante : ‘#Demo project un simple fichier’.
+                        <img src ="img/creationRd.png" alt="creation readme">
+                </li>
+                <li>
+                        Faites le stagging et le commiting avec un commentaire. 
+                        <img src ="img/1commit.png" alt="commit">
+                </li>
+        </ul>
+        <h3 style="text-align: center;"> #2 : Second Step : La découverte </h3>
+        <ul>
+            <li>  Déplacez-vous dans les fichiers de configuration « .git ».<br>
+                <img src="img/cd.git.png" alt= "cd git">
+            </li>
+            <li>    Tapez Ls –al <br>
+                <img src="img/ls-al.png" alt= "ls -la">
+            </li>
+            <li>Expliquez les clauses suivantes : HEAD, LOGS, BRANCHES<br>
+                HEAD : definie la branch actuele <br>
+                LOGS : <br>
+                BRANCHES: </li>
+            <li>Retournez vers votre Repo et créez le fichier « Licence.md ».<br>
+                <img src="img/licencemd.png" alt= "licencemd"></li>
+            <li>Faites-le Commit <br>
+                <img src="img/commit 2.png" alt= "commit 2"></li>
+            <li>Affichez les fichiers traqués.<br>
+                <img src="img/traquedFile.png" alt= "traquedFile"></li>
+        </ul>
+
+            <h3 style="text-align: center;"> :3 : third step :  Historique  </h3>
+        <ul>
+           <li>Affichez le dernier commit sur une ligne en ajoutant l’option d’affichage de la hiérarchie de la branche, avec les commit et leur branche aussi <br></li>
+           <li>Créez un alias de la commande précédente le nom de l’alias est : historique </li>
+           <li>Affichez la liste des alias<br>
+            <img src="img/3question.png" alt= "reponce des 3 question"></li> 
+            <li>Affichez l’historique des commit du fichier README.md avec l’alias. <br>
+                <img src="img/comit read.png" alt= "comit read">
+            </li>
+            </ul>
+     <h3 style="text-align: center;">  Fourth Step :  Excluding files  </h3>
+     <ul>
+         <li>Renommer le fichier Licence.md à Licence.txt <br>
+            <img src="img/mvMd.png" alt= "comit read"></li>
+            <li>Faites le stagging avec mise à jour (ne pas faire « git add . ») <br>
+                <img src="img/addU.png" alt= "add">
+            </li>
+            <li>Faites-le commit. <br>
+                <img src="img/commit-l.png" alt= "commit-l">
+            </li>
+        </ul>
+            <p>	Supposons que nous développons sur notre plateforme, surement on a des fichiers qu’on veut exclure de notre arborescence du repository Local</p>
+     <ul>
+         <li>	Créez un fichier nommé application.log <br>
+         <img src="img/applog.png" alt= "applog">
+            </li>
+            <li>		Ne faites pas le stagging mais créez un fichier nommé   « .gitignore »<br>
+                <img src="img/gitignore.png" alt= "gitignore">
+                   </li>
+             <li>			Sur le fichier .gitignore  Ajoutez la ligne suivante « *.log »<br>
+                    <img src="img/.log.png" alt= ".log">
+                       </li>
+                       <li>			Faites le stagging et le commit <br>
+                        <img src="img/Addignore.png" alt= "Addignore">
+                           </li>
+           <li>	Qu’est-ce que vous constatez ?<br>
+            on contate que les fichier avec l'extention .log n'ion pas etait pris en compte dans le commit car il sont ajouter au fichier .gitignore</li>
+     </ul>
+
+<h3 style="text-align: center;"> fifth Step : Branching and Merging </h3>
+   <pre>Introduction : un petit rappel, on a trois types pour faire le merge : 
+        	The fast forward merging 
+        	The manual 
+        	The automatic </pre>
+        <ul>
+          <li>		Modifiez le fichier README.md <br>
+                    <img src="img/modifRead.png" alt= "modifRead">
+          </li>
+          <li>	Ne faites pas le commit <br>
+            Créez une branche pour la modification du fichier README.md du nom ‘updates’ <br>
+                            <img src="img/updatBrznch.png" alt= "updatBrznch">
+          </li>
+          <li>Faites le stagging et le commit en une seule ligne. <br>
+            <img src="img/branchCom.png" alt= "branche commit"></li>
+            <li>Affichez l’historique avec l’alias<br>
+                <img src="img/branchhistor.png" alt= "historique branche"></li>
+            <li>		Qu’est-ce que vous constatez ?  <br>
+                 On constate que la commande affiche l'historrique effectuer dans la branche master et la nouvelle branche updates</li>
+                 <li>		Retournez vers la branche Master.<br>
+                    <img src="img/switshmaster.png" alt= "applog">
+                       </li>
+                       <li>		Affichez l’historique avec l’alias<br>
+                           <img src="img/masterHisto.png" alt= "historique avec alias">
+                              </li>
+                        <li>		Qu’est-ce que vous constatez ? <br>
+                          on constat que la commande git historie affiche l'historique des 2 branche au méme temps quoi qu'en soit sur la bra,che master ou sur la branch update
+                                  </li>
+                                  <li>Maintenant faites le merge. <br>
+                                   <img src="img/mergeUpdat.png" alt= "merge updat">
+                                      </li>
+                                      <img src="img/5etap.png" alt ="photo trello">
+        </ul>
+<h3 style="text-align: center;"> sixth Step : Conflict Resolution  </h3>
+<ul>
+        <li>Créez une branche avec le nom ‘BAD’ <br>
+            <img src="img/badbranch.png" alt= "creation branch bad"></li>
+        <li>		Modifiez le fichier README.md et ajouter la ligne ‘Trouble’ <br> <br>
+                    <img src="img/readBad.png" alt= "modification reademe"> </li>
+       <li>Faites le stagging et le commit en une seule ligne. <br>
+          <img src="img/modirReadBad.png" alt= "commit sur bad"></li>
+       <li>Switchez faire la branche principale ‘master’ <br>
+            <img src="img/chekMas.png" alt= "switche master"> </li>
+       <li>	Maintenant modifiez le fichier README.md et ajoutez la ligne ‘Troubleshooting’<br> <br>
+                    <img src="img/modifReadMaster.png" alt= "modification reademe sur master "></li>
+       <li>Stagging/commiting avec commentaire ‘branche bien faite’ <br>
+           <img src="img/bienfait.png" alt= "commit sur bad"></li>
+
+
+           <li>Oups !! corriger le commentaire du dernier commit <br>
+            <img src="img/modifiedComm.png" alt= "modiffier le commit"></li>
+         <li>Affichez l’historique <br>
+              <img src="img/histoCOmm.png" alt= "historique commit"> </li>
+         <li>	Qu’est-ce que vous constatez ? expliquez l’objectif de ce petit scenario ?<br> <br>
+                     On constat que tt le commit reste enregistrer sur tt type de branches</li>
+         <li>Faites le merge de la branche ‘BAD’<br>
+             <img src="img/merging bad.png" alt= "merge sur bad"></li>
+             <li>Expliquez le message ?<br>
+            le message indique que ya un conflit de merge qu'on doit me resoudre avant de commit</li>
+            <li>Exécutez la commande suivante : cat README.md ? Expliquez ? <br>
+                <img src="img/catRead.png" alt= "contenu du readme">  <br>
+            ca montre la difference entre les 2 branche </li>
+            <li>Tapez la commande « git mergetool » ? qu’est-ce que vous constatez ? <br>
+                On constat que
+            </li>
+            
+</ul>
+<h3 style="text-align: center;">seventh Step:  merge tools  </h3>
+<ul>
+    <li>Sur git bash tapez la commande : git config –global –list</li>
+    <li>Git config –global merge.tool p4merge </li>
+    <li>Git config –global mergetool.p4merge.path “lien d’installation” ( .exe)</li>
+    <li>N’oubliez pas de bien configurer le prompt ? devinez comment ? </li>
+    <li>Tapez la commande git mergetool<br>
+        <img src ="img/gitlergtool.png" alt="platforme p4merge" width="500px" height="500px"></li>
+        <li>	Analysez ce que vous voyez ? et expliquez la plateforme ouverte en temps réel ? <br>
+           c'est un platforme qui donne les 2 modification effectuer sur les 2 branch et donne la possibiliter de choisir quelle modification choisir pour le merge   </li>
+      
+    
+</ul>
+<h3 style="text-align: center;">eigth Step:  Challenge  </h3>
+<ul>
+    <li>Sur le fichier  .gitignore ; écrivez une clause pour rejeter les fichiers indésirables et redondants
+            <img src="img/odifgitig.png" alt= "contenu du readme"> 
+    </li>
+    <li>On laisse que les fichiers : licence.txt Readme.md .gitignore  ( exemple *.log pour application.log)</li>
+    <img src="img/comitmerging.png" alt= "commit merg">
+    <img src="img/finStep.png" alt ="fin">
+    </ul>
+    </div>
+    
+</body>
+</html>
